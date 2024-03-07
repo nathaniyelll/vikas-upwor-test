@@ -81,6 +81,10 @@ p{
     content: "\25B2";
   }
 
+.posp__section{
+    background-color: #eff5ff;
+}
+
 
 @media (min-width: 768px) {
   .posp{
