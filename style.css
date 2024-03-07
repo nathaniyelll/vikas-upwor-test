@@ -10,7 +10,7 @@
     --acordion-color1: #6EC1E4;
     --acordion-color2: #61CE70;
 }
-h1, h2,h3,h4,h5,h6{
+h1, h2,h3,h4,h6,h6{
     color: var(--heading-color);
 }
 .hero{
@@ -50,16 +50,23 @@ p{
     visibility: hidden;
 }
 
-.accordion__Link.collapsed{
+.accordion-button.collapsed{
     color: var(--acordion-color1) !important;
 }
-.accordion__Link{
+.accordion-button{
     color: var(--acordion-color2) !important;
 }
-@media (max-width:640px) {
+.accordion-button::after {
+    display: none;
+    content: none
+  }
+
+@media (max-width:992px) {
     .small__devices__accordion{
         display: block;
         visibility:visible;
+        border-radius: 0;
+        
     } 
     .tab__Large{
         display: none;
