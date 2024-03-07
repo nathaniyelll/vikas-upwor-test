@@ -18,11 +18,14 @@ h1, h2,h3,h4,h6,h6{
     width: 50%;
     align-self: center;
 }
+.posp{
+    width: 100%;
+}
 form{
     width: 90% !important;
     margin: 0 auto;
-
 }
+
 label, input, button{
     display: block;
 }
@@ -77,6 +80,17 @@ p{
     background-image: url("^");
     content: "\25B2";
   }
+
+
+@media (min-width: 768px) {
+  .posp{
+    width: 45%;
+    margin: 0 auto;
+  }
+  .posp__form{
+    width: 100%;
+  }
+}
 @media (min-width: 992px) {
     .leads{
         width: 35%;
