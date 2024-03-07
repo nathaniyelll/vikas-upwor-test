@@ -32,6 +32,7 @@ input{
 }
 ::placeholder{
     color: var(--paragraph-color);
+    font-size: 14px;
 }
 p{
     color: var(--paragraph-color);
