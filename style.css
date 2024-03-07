@@ -84,7 +84,7 @@ p{
 
 @media (min-width: 768px) {
   .posp{
-    width: 45%;
+    width: 75%;
     margin: 0 auto;
   }
   .posp__form{
@@ -99,6 +99,10 @@ p{
     form{
         width: 50% !important;
     }
+    .posp{
+        width: 50%;
+        margin: 0 auto;
+      }
 }
 @media (max-width:992px) {
     .small__devices__accordion{
