@@ -51,7 +51,9 @@ p{
     display: none;
     visibility: hidden;
 }
-
+.accordion{
+    --bs-accordion-active-bg: #fff;
+}
 .accordion-button.collapsed{
     color: var(--acordion-color1) !important;
 }
@@ -61,6 +63,19 @@ p{
 .accordion-button::after {
     display: none;
     content: none
+}
+
+  .health__accordion::after{
+    display: block;
+    order: -1;
+    margin-left: 0; 
+    margin-right:0.5em;
+    content: "\25B6";
+    background-image: url(">");
+  }
+  .health__accordion:not(.collapsed)::after{
+    background-image: url("^");
+    content: "\25B2";
   }
 @media (min-width: 992px) {
     .leads{
